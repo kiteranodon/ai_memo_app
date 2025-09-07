@@ -19,5 +19,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        // MemoSeederを呼び出し
+        $this->call([
+            MemoSeeder::class,
+        ]);
     }
 }
