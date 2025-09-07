@@ -21,6 +21,9 @@ Route::middleware(['auth'])->group(function () {
     // メモ一覧画面ルート
     Volt::route('memos', 'memos.index')->name('memos.index');
 
+    // メモ作成画面ルート
+    Volt::route('memos/create', 'memos.create')->name('memos.create');
+
     // メモ詳細画面ルート
     Volt::route('memos/{memo}', 'memos.show')->name('memos.show');
 });
