@@ -66,15 +66,20 @@ $save = function () {
         </div>
 
         <!-- 送信ボタン -->
-        <div class="flex justify-end space-x-4">
-            <a href="{{ route('memos.index') }}"
-                class="px-4 py-2 text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors">
-                キャンセル
+        <div class="flex justify-between items-center">
+            <a href="{{ route('memos.index') }}" class="text-blue-600 hover:text-blue-800 transition-colors">
+                ← メモ一覧に戻る
             </a>
-            <button type="submit"
-                class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-                保存
-            </button>
+            <div class="flex space-x-4">
+                <a href="{{ route('memos.index') }}"
+                    class="px-4 py-2 text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors">
+                    キャンセル
+                </a>
+                <button type="submit"
+                    class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                    保存
+                </button>
+            </div>
         </div>
     </form>
 </div>

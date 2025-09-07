@@ -17,7 +17,13 @@ with(function () {
 ?>
 
 <div class="max-w-4xl mx-auto mt-10 p-6">
-    <h1 class="text-3xl font-bold mb-8 text-gray-800">メモ一覧</h1>
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">メモ一覧</h1>
+        <a href="{{ route('memos.create') }}"
+            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+            新規作成
+        </a>
+    </div>
 
     @if ($memos->count() > 0)
         <div class="grid gap-4">
